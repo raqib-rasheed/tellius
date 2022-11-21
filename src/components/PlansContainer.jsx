@@ -22,6 +22,7 @@ export default function PlansContainer() {
     if (Array.isArray(plans) && plans?.length < 1) {
       localStorage.setItem("week-plans", JSON.stringify(initialWeekPlans));
     }
+    // eslint-disable-next-line react-hooks/exhaustive-deps
   }, []);
 
   return (
